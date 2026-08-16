@@ -1,0 +1,188 @@
+.reviews {
+  background: var(--color-light-gray);
+  padding: 80px 24px;
+}
+
+.reviews__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Trust bar */
+.reviews__trust {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #fff;
+  padding: 32px 40px;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
+}
+
+.reviews__trust-score {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews__trust-number {
+  font-family: var(--font-serif);
+  font-size: 52px;
+  font-weight: 300;
+  color: #111;
+  line-height: 1;
+}
+
+.reviews__trust-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reviews__trust-label {
+  font-size: 12px;
+  color: #888;
+}
+
+.reviews__trust-divider {
+  width: 1px;
+  height: 48px;
+  background: #e0e0e0;
+}
+
+.reviews__trust-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reviews__trust-stat-num {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: #111;
+  line-height: 1;
+}
+
+.reviews__trust-stat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Header */
+.reviews__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews__eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.reviews__title {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 300;
+  color: #111;
+}
+
+/* Cards */
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.star-row {
+  display: flex;
+  gap: 3px;
+}
+
+.review-card__text {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  font-style: italic;
+  flex: 1;
+}
+
+.review-card__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.review-card__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+.review-card__location {
+  font-size: 12px;
+  color: #999;
+}
+
+.review-card__product {
+  font-size: 11px;
+  color: var(--color-accent);
+  letter-spacing: 0.06em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Trustpilot */
+.reviews__cta-wrap {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.reviews__trustpilot-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.reviews__trustpilot-link:hover {
+  color: #111;
+  border-color: #111;
+}
+
+.reviews__trustpilot-logo {
+  height: 20px;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .reviews__grid {
+    grid-template-columns: 1fr;
+  }
+  .reviews__trust {
+    gap: 24px;
+    padding: 24px;
+  }
+  .reviews__trust-divider {
+    display: none;
+  }
+}
