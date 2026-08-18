@@ -68,12 +68,14 @@
 .footer__link {
   font-size: 13px;
   color: rgba(255,255,255,0.5);
-  transition: color 0.2s;
+  transition: all 0.3s ease;
   line-height: 1.5;
+  display: inline-block;
 }
 
 .footer__link:hover {
-  color: rgba(255,255,255,0.9);
+  color: #fff;
+  transform: translateX(4px);
 }
 
 /* Bottom bar */
@@ -120,6 +122,14 @@
   border: 1px solid rgba(255,255,255,0.15);
   padding: 4px 10px;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.02);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.payment-pill:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
 }
 
 @media (max-width: 900px) {

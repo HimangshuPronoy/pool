@@ -3,9 +3,9 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import './PromoBar.css';
 
 const promos = [
-  'Free 3D Design Consultation with New Builds · Book Now',
-  'Receive a free robotic pool cleaner with any new pool construction',
-  '$500 off pool heating systems · Use code: SUMMERREADY',
+  'Consultation Gratuite de Conception 3D pour les Nouvelles Constructions · Réservez Maintenant',
+  'Recevez un robot nettoyeur de piscine gratuit avec toute nouvelle construction',
+  '500 $ de réduction sur les systèmes de chauffage de piscine · Code : SUMMERREADY',
 ];
 
 export default function PromoBar() {

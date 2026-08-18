@@ -4,22 +4,22 @@ const steps = [
   {
     number: '01',
     title: 'Consultation & Vision',
-    desc: 'We start by understanding your vision, lifestyle, and assessing your backyard space.',
+    desc: 'Nous commençons par comprendre votre vision, votre mode de vie et par évaluer l\'espace de votre jardin.',
   },
   {
     number: '02',
-    title: '3D Design & Permitting',
-    desc: 'Our designers create a realistic 3D model. Once approved, we handle all necessary city permits.',
+    title: 'Conception 3D & Permis',
+    desc: 'Nos concepteurs créent un modèle 3D réaliste. Une fois approuvé, nous nous occupons de tous les permis de construire nécessaires.',
   },
   {
     number: '03',
-    title: 'Construction & Finishing',
-    desc: 'Our skilled craftsmen excavate, build, and apply premium finishes to your new pool.',
+    title: 'Construction & Finitions',
+    desc: 'Nos artisans qualifiés creusent, construisent et appliquent des finitions haut de gamme à votre nouvelle piscine.',
   },
   {
     number: '04',
-    title: 'Final Walkthrough & Enjoy',
-    desc: 'We hand over your completed oasis, ensuring everything runs perfectly so you can dive right in.',
+    title: 'Inspection Finale & Profitez',
+    desc: 'Nous vous livrons votre oasis achevée, en nous assurant que tout fonctionne parfaitement pour que vous puissiez plonger.',
   },
 ];
 
@@ -28,9 +28,9 @@ export default function HowItWorks() {
     <section className="how">
       <div className="how__inner">
         <div className="how__header">
-          <p className="how__eyebrow">The Process</p>
-          <h2 className="how__title">How it works</h2>
-          <p className="how__sub">Building your dream pool is easier than you think.</p>
+          <p className="how__eyebrow">Le Processus</p>
+          <h2 className="how__title">Comment ça marche</h2>
+          <p className="how__sub">Construire la piscine de vos rêves est plus facile que vous ne le pensez.</p>
         </div>
         <div className="how__steps">
           {steps.map((s, i) => (
@@ -43,7 +43,7 @@ export default function HowItWorks() {
           ))}
         </div>
         <div className="how__cta-wrap">
-          <a href="#" className="how__cta">Book a free consultation</a>
+          <a href="#" className="how__cta">Réserver une consultation gratuite</a>
         </div>
       </div>
     </section>

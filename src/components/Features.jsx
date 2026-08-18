@@ -3,23 +3,23 @@ import './Features.css';
 const features = [
   {
     icon: '✦',
-    title: 'Custom 3D Design',
-    desc: 'Every pool is meticulously designed in 3D so you can see exactly how it will look in your backyard.',
+    title: 'Conception 3D Sur Mesure',
+    desc: 'Chaque piscine est méticuleusement conçue en 3D pour que vous puissiez voir exactement à quoi elle ressemblera dans votre jardin.',
   },
   {
     icon: '◈',
-    title: 'Premium Materials',
-    desc: "We only use the finest tiles, coping, and finishes to ensure your pool stands the test of time.",
+    title: 'Matériaux Haut de Gamme',
+    desc: "Nous n'utilisons que les meilleurs carrelages, margelles et finitions pour garantir que votre piscine résiste à l'épreuve du temps.",
   },
   {
     icon: '⬡',
-    title: '1,500+ Projects Completed',
-    desc: 'Trusted by homeowners who value quality, precision, and a seamless construction experience.',
+    title: 'Plus de 1 500 Projets Réalisés',
+    desc: 'La confiance de propriétaires qui apprécient la qualité, la précision et une expérience de construction sans faille.',
   },
   {
     icon: '◎',
-    title: 'Expert Craftsmanship',
-    desc: 'Our experienced artisans handle every detail, from excavation to final finish with ultimate care.',
+    title: 'Savoir-Faire Expert',
+    desc: 'Nos artisans expérimentés traitent chaque détail, de l\'excavation à la finition finale avec le plus grand soin.',
   },
 ];
 
@@ -28,9 +28,9 @@ export default function Features() {
     <section className="features">
       <div className="features__inner">
         <div className="features__header">
-          <p className="features__eyebrow">Why Oasis Pools</p>
+          <p className="features__eyebrow">Pourquoi Oasis Pools</p>
           <h2 className="features__title">
-            Stunning design.<br />Expert craftsmanship.<br />Lasting quality.
+            Design époustouflant.<br />Savoir-faire expert.<br />Qualité durable.
           </h2>
         </div>
         <div className="features__grid">

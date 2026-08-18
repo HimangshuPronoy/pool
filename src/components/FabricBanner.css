@@ -6,19 +6,21 @@
 }
 
 .fabric-banner__image-col {
+  height: 100%;
+  min-height: 400px;
   overflow: hidden;
+  position: relative;
 }
 
 .fabric-banner__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.85;
-  transition: transform 0.6s ease;
+  transition: transform 0.8s ease-out;
 }
 
 .fabric-banner:hover .fabric-banner__img {
-  transform: scale(1.03);
+  transform: scale(1.08);
 }
 
 .fabric-banner__content {

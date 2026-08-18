@@ -1,33 +1,39 @@
 import { useState } from 'react';
 import { Search, ShoppingBag, User, Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const navItems = [
   {
-    label: 'Custom Pools',
-    sub: ['Infinity Pools', 'Geometric Pools', 'Freeform Pools', 'Plunge Pools', 'View All'],
+    label: 'Piscines Sur Mesure',
+    sub: ['Piscines à Débordement', 'Piscines Géométriques', 'Piscines Libres', 'Mini-piscines', 'Voir Tout'],
   },
   {
-    label: 'Spas & Hot Tubs',
-    sub: ['Attached Spas', 'Standalone Spas', 'Custom Features', 'View All'],
+    label: 'Spas & Bains à Remous',
+    sub: ['Spas Intégrés', 'Spas Indépendants', 'Fonctionnalités Sur Mesure', 'Voir Tout'],
   },
   {
-    label: 'Remodeling',
-    sub: ['Pool Resurfacing', 'Tile & Coping', 'Equipment Upgrades', 'View All'],
+    label: 'Rénovation',
+    sub: ['Revêtement de Piscine', 'Carrelage & Margelles', 'Mise à Niveau des Équipements', 'Voir Tout'],
   },
   {
-    label: 'Outdoor Living',
-    sub: ['Outdoor Kitchens', 'Fire Pits', 'Patios & Decking', 'View All'],
+    label: 'Aménagement Extérieur',
+    sub: ['Cuisines d\'Extérieur', 'Braseros', 'Patios & Terrasses', 'Voir Tout'],
   },
   {
-    label: 'Gallery',
-    sub: ['Recent Projects', 'Before & After', 'Design Ideas', 'View All'],
+    label: 'Galerie',
+    sub: ['Projets Récents', 'Avant & Après', 'Idées de Design', 'Voir Tout'],
   },
   {
-    label: 'About Us',
-    sub: ['Our Story', 'The Process', 'Meet the Team', 'Contact Us'],
+    label: 'À Propos',
+    sub: ['Notre Histoire', 'Le Processus', 'L\'Équipe', 'Nous Contacter'],
   },
 ];
+
+const generateLink = (text) => {
+  if (text === 'Voir Tout' || text === 'Galerie') return '/gallery';
+  return `/service/${encodeURIComponent(text.toLowerCase().replace(/\s+/g, '-'))}`;
+};
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -46,10 +52,10 @@ export default function Navbar() {
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
 
-        <a href="/" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <span className="navbar__logo-main">OASIS POOLS</span>
           <span className="navbar__logo-tm">™</span>
-        </a>
+        </Link>
 
         <div className="navbar__actions">
           <button className="navbar__action-btn" aria-label="Search">
@@ -81,16 +87,16 @@ export default function Navbar() {
             {activeDropdown === item.label && (
               <div className="navbar__dropdown">
                 {item.sub.map((s) => (
-                  <a key={s} href="#" className="navbar__dropdown-link">
+                  <Link key={s} to={generateLink(s)} className="navbar__dropdown-link">
                     {s}
-                  </a>
+                  </Link>
                 ))}
               </div>
             )}
           </div>
         ))}
-        <a href="#" className="navbar__nav-btn navbar__nav-special">Get a Quote</a>
-        <a href="#" className="navbar__nav-btn navbar__nav-special">Design Center</a>
+        <Link to="/gallery" className="navbar__nav-btn navbar__nav-special">Obtenir un Devis</Link>
+        <Link to="/gallery" className="navbar__nav-btn navbar__nav-special">Centre de Design</Link>
       </nav>
 
       {/* Mobile menu */}
@@ -113,19 +119,19 @@ export default function Navbar() {
               {mobileExpanded === item.label && (
                 <div className="navbar__mobile-sub">
                   {item.sub.map((s) => (
-                    <a key={s} href="#" className="navbar__mobile-sub-link">
+                    <Link key={s} to={generateLink(s)} className="navbar__mobile-sub-link">
                       {s}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
             </div>
           ))}
-          <a href="#" className="navbar__mobile-btn">Get a Quote</a>
-          <a href="#" className="navbar__mobile-btn">Design Center</a>
+          <Link to="/gallery" className="navbar__mobile-btn">Obtenir un Devis</Link>
+          <Link to="/gallery" className="navbar__mobile-btn">Centre de Design</Link>
           <div className="navbar__mobile-divider" />
-          <a href="#" className="navbar__mobile-btn">About Us</a>
-          <a href="#" className="navbar__mobile-btn">Customer Service</a>
+          <Link to="/gallery" className="navbar__mobile-btn">À Propos</Link>
+          <Link to="/gallery" className="navbar__mobile-btn">Service Client</Link>
         </div>
       )}
     </header>

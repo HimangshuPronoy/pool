@@ -6,22 +6,22 @@ const reviews = [
     name: 'Michael T.',
     location: 'Austin, TX',
     rating: 5,
-    text: 'Absolutely blown away by the quality. Our new pool fits our backyard perfectly. The materials are luxurious and the construction process was incredibly smooth.',
-    product: 'Infinity Pool Build',
+    text: 'Absolument époustouflé par la qualité. Notre nouvelle piscine s\'intègre parfaitement à notre jardin. Les matériaux sont luxueux et le processus de construction a été incroyablement fluide.',
+    product: 'Construction de Piscine à Débordement',
   },
   {
     name: 'Raj S.',
     location: 'Los Angeles, CA',
     rating: 5,
-    text: 'The design process was surprisingly simple and the result exceeded my expectations. The 3D modeling service is exactly what we needed to visualize the project.',
-    product: 'Geometric Pool & Spa',
+    text: 'Le processus de conception a été étonnamment simple et le résultat a dépassé mes attentes. Le service de modélisation 3D est exactement ce dont nous avions besoin pour visualiser le projet.',
+    product: 'Piscine Géométrique & Spa',
   },
   {
     name: 'Thomas B.',
     location: 'Miami, FL',
     rating: 5,
-    text: 'We\'ve had our pool for three years now and it looks as good as day one. The team was professional, timely, and delivered on every promise.',
-    product: 'Custom Freeform Pool',
+    text: 'Nous avons notre piscine depuis trois ans maintenant et elle est aussi belle qu\'au premier jour. L\'équipe a été professionnelle, ponctuelle et a tenu toutes ses promesses.',
+    product: 'Piscine Libre Sur Mesure',
   },
 ];
 
@@ -50,30 +50,30 @@ export default function Reviews() {
             <span className="reviews__trust-number">4.8</span>
             <div className="reviews__trust-meta">
               <StarRow count={5} />
-              <span className="reviews__trust-label">Based on 7,481 Trustpilot reviews</span>
+              <span className="reviews__trust-label">Basé sur 7 481 avis Trustpilot</span>
             </div>
           </div>
           <div className="reviews__trust-divider" />
           <div className="reviews__trust-stat">
-            <span className="reviews__trust-stat-num">1,500+</span>
-            <span className="reviews__trust-stat-label">Pools Built</span>
+            <span className="reviews__trust-stat-num">1 500+</span>
+            <span className="reviews__trust-stat-label">Piscines Construites</span>
           </div>
           <div className="reviews__trust-divider" />
           <div className="reviews__trust-stat">
             <span className="reviews__trust-stat-num">20+</span>
-            <span className="reviews__trust-stat-label">Years Experience</span>
+            <span className="reviews__trust-stat-label">Années d'Expérience</span>
           </div>
           <div className="reviews__trust-divider" />
           <div className="reviews__trust-stat">
             <span className="reviews__trust-stat-num">100%</span>
-            <span className="reviews__trust-stat-label">Satisfaction Guaranteed</span>
+            <span className="reviews__trust-stat-label">Satisfaction Garantie</span>
           </div>
         </div>
 
         {/* Review cards */}
         <div className="reviews__header">
-          <p className="reviews__eyebrow">Customer Stories</p>
-          <h2 className="reviews__title">What our customers say</h2>
+          <p className="reviews__eyebrow">Histoires de Clients</p>
+          <h2 className="reviews__title">Ce que disent nos clients</h2>
         </div>
         <div className="reviews__grid">
           {reviews.map((r) => (
@@ -103,7 +103,7 @@ export default function Reviews() {
               alt="Trustpilot"
               className="reviews__trustpilot-logo"
             />
-            <span>Read all reviews on Trustpilot</span>
+            <span>Lire tous les avis sur Trustpilot</span>
           </a>
         </div>
       </div>

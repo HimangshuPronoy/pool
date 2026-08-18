@@ -11,16 +11,16 @@ export default function FabricBanner() {
         />
       </div>
       <div className="fabric-banner__content">
-        <p className="fabric-banner__eyebrow">Premium Materials</p>
+        <p className="fabric-banner__eyebrow">Matériaux Haut de Gamme</p>
         <h2 className="fabric-banner__title">
-          Experience the quality<br />of our finishes
+          Découvrez la qualité<br />de nos finitions
         </h2>
         <p className="fabric-banner__text">
-          We use only the highest grade glass mosaics, natural stone, and premium plaster to ensure your pool is as durable as it is beautiful.
+          Nous n'utilisons que des mosaïques en verre, des pierres naturelles et des enduits de qualité supérieure pour garantir que votre piscine soit aussi durable que belle.
         </p>
         <div className="fabric-banner__actions">
-          <a href="#" className="fabric-banner__btn fabric-banner__btn--primary">Request a Material Sample</a>
-          <a href="#" className="fabric-banner__btn fabric-banner__btn--secondary">Browse Finishes</a>
+          <a href="#" className="fabric-banner__btn fabric-banner__btn--primary">Demander un Échantillon</a>
+          <a href="#" className="fabric-banner__btn fabric-banner__btn--secondary">Parcourir les Finitions</a>
         </div>
       </div>
     </section>

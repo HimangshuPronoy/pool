@@ -3,28 +3,28 @@ import './Footer.css';
 
 const footerLinks = {
   'Services': [
-    'Custom Pools',
-    'Spas & Hot Tubs',
-    'Pool Remodeling',
-    'Outdoor Living',
-    'Maintenance',
-    'Commercial Pools',
+    'Piscines Sur Mesure',
+    'Spas & Bains à Remous',
+    'Rénovation de Piscines',
+    'Aménagement Extérieur',
+    'Entretien',
+    'Piscines Commerciales',
   ],
-  'Resources': [
-    'Design Gallery',
-    'Materials Guide',
-    'Financing Options',
-    'Permitting Info',
-    'Pool Care Tips',
+  'Ressources': [
+    'Galerie de Design',
+    'Guide des Matériaux',
+    'Options de Financement',
+    'Infos Permis',
+    'Conseils d\'Entretien',
     'FAQ',
   ],
-  'Company': [
-    'About Oasis Pools',
-    'Our Process',
-    'Testimonials',
-    'Awards & Recognition',
-    'Careers',
-    'Contact Us',
+  'Entreprise': [
+    'À Propos d\'Oasis Pools',
+    'Notre Processus',
+    'Témoignages',
+    'Prix & Reconnaissances',
+    'Carrières',
+    'Nous Contacter',
   ],
 };
 
@@ -38,7 +38,7 @@ export default function Footer() {
             OASIS POOLS<sup>™</sup>
           </a>
           <p className="footer__brand-text">
-            Custom swimming pools crafted with precision. We believe every backyard deserves to be an oasis.
+            Piscines sur mesure conçues avec précision. Nous pensons que chaque jardin mérite d'être une oasis.
           </p>
           <div className="footer__socials">
             <a href="#" aria-label="Instagram" className="footer__social-link">
@@ -74,10 +74,10 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="footer__bottom-inner">
           <p className="footer__copy">
-            © {new Date().getFullYear()} Oasis Pools™ · All rights reserved
+            © {new Date().getFullYear()} Oasis Pools™ · Tous droits réservés
           </p>
           <div className="footer__payment">
-            <span className="footer__payment-label">We accept:</span>
+            <span className="footer__payment-label">Nous acceptons :</span>
             <div className="footer__payment-methods">
               <div className="payment-pill">Visa</div>
               <div className="payment-pill">Mastercard</div>

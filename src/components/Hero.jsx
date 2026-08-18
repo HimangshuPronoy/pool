@@ -85,15 +85,15 @@ export default function Hero() {
         <div className="hero__sticky">
           <canvas ref={canvasRef} className="hero__canvas" />
           <div className="hero__content-overlay">
-            <p className="hero__eyebrow">Award Winning Designs</p>
+            <p className="hero__eyebrow">Designs Primés</p>
             <h1 className="hero__title">
-              Your Dream Pool,<br />Crafted to Perfection
+              La Piscine de vos Rêves,<br />Conçue à la Perfection
             </h1>
             <p className="hero__subtitle">
-              Elevate your outdoor living with a custom-designed oasis.<br />
-              Uncompromising quality and expert craftsmanship.
+              Sublimez votre espace extérieur avec une oasis sur mesure.<br />
+              Qualité irréprochable et savoir-faire expert.
             </p>
-            <a href="#" className="hero__cta">Start Your Project</a>
+            <a href="#" className="hero__cta">Commencer votre Projet</a>
           </div>
         </div>
       </section>
@@ -107,9 +107,9 @@ export default function Hero() {
             className="hero__tile-img"
           />
           <div className="hero__tile-content">
-            <span className="hero__tile-label">New Construction</span>
-            <h3 className="hero__tile-title">Modern geometric perfection</h3>
-            <a href="#" className="hero__tile-link">View Gallery →</a>
+            <span className="hero__tile-label">Nouvelle Construction</span>
+            <h3 className="hero__tile-title">La perfection géométrique moderne</h3>
+            <a href="#" className="hero__tile-link">Voir la Galerie →</a>
           </div>
         </div>
         <div className="hero__tile">
@@ -119,9 +119,9 @@ export default function Hero() {
             className="hero__tile-img"
           />
           <div className="hero__tile-content hero__tile-content--light">
-            <span className="hero__tile-label">Spas & Features</span>
-            <h3 className="hero__tile-title">Luxury in every detail</h3>
-            <a href="#" className="hero__tile-link hero__tile-link--dark">Explore Options →</a>
+            <span className="hero__tile-label">Spas & Équipements</span>
+            <h3 className="hero__tile-title">Le luxe dans les moindres détails</h3>
+            <a href="#" className="hero__tile-link hero__tile-link--dark">Explorer les Options →</a>
           </div>
         </div>
       </div>
